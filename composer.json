@@ -1,0 +1,41 @@
+{
+    "name": "tbondois/php-array-types",
+    "description": "PHP array classes for common needs",
+    "require": {
+        "php": ">=7.1",
+        "tbondois/php-toolbox": "^0.5.0"
+    },
+    "require-dev": {
+    },
+    "minimum-stability": "stable",
+    "suggest": {
+        "tbondois/php-debug": "PHP development libraries (dumpers...) for common needs. should not be installed in production"
+    },
+    "autoload": {
+        "psr-4": {
+            "TB\\ArrayTypes\\": "src/"
+        },
+        "files": [
+            "init/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TB\\ArrayTypes\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "homepage": "https://packagist.org/packages/tbondois/php-toolbox",
+    "authors": [
+        {
+            "name": "Thomas Bondois",
+            "homepage": "https://thomas.bondois.info"
+        }
+    ],
+    "keywords": [
+        "array",
+        "utils",
+        "toolbox",
+        "php"
+    ]
+}

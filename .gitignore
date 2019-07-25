@@ -1,0 +1,8 @@
+/.*
+!.git*
+!.editorconfig
+/vendor/
+/*.phar
+/composer.lock
+/phpunit.xml
+/*.php
