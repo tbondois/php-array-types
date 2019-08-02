@@ -26,7 +26,7 @@ Usage
 ---------------
 
 ```php
-include_once 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
 $array = array_type_mixed(["value1", 5 => "value2", "key3" => "value3"]);
 $reversed = $array->reverse();
