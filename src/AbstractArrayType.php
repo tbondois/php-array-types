@@ -378,6 +378,13 @@ abstract class AbstractArrayType extends ArrayObject
         return array_reverse($array, $preserve_keys);
     }
 
+    function multisortAndSave($order = SORT_REGULAR, $otherArray = null)
+    {
+        $array = $this->getArrayCopy();
+        array_multisort($array, $order, $otherArray);
+        return $this->import($array);
+    }
+
     function sortByColumnAndSave($column, $order = SORT_ASC) {
         $array = $this->getArrayCopy();
         $keys = array_column($array, $column);
