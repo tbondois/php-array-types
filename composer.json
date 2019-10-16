@@ -3,9 +3,10 @@
     "description": "PHP array classes for common needs",
     "require": {
         "php": ">=7.1",
-        "tbondois/php-toolbox": "^0.5.0"
+        "tbondois/php-toolbox": "^0.6.0"
     },
     "require-dev": {
+        "tbondois/php-debug": "^0.3.2"
     },
     "minimum-stability": "stable",
     "suggest": {

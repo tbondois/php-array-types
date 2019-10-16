@@ -55,7 +55,7 @@ abstract class AbstractArrayType extends ArrayObject
         }
         return is_callable($c = $this->__get($key)) ? call_user_func_array($c, $args) : null;
     }
-    
+
     public function getObjectCopy() : ArrayTypeMixed
     {
         $clone = clone $this;
@@ -132,37 +132,37 @@ abstract class AbstractArrayType extends ArrayObject
     public function getFirstKey()
     {
         $array = $this->getArrayCopy();
-        return Util::array_key_first($array);
+        return Util::array_first_key($array);
     }
 
     public function getFirstValue()
     {
         $array = $this->getArrayCopy();
-        return Util::array_first($array);
+        return Util::array_first_value($array);
     }
 
     public function getLastKey()
     {
         $array = $this->getArrayCopy();
-        return Util::array_last($array);
+        return Util::array_last_key($array);
     }
 
     public function getLastValue()
     {
         $array = $this->getArrayCopy();
-        return Util::iterable_last($array);
+        return Util::array_last_value($array);
     }
 
     public function getRandomKey()
     {
         $array = $this->getArrayCopy();
-        return Util::array_key_random($array);
+        return Util::array_random_key($array);
     }
 
     public function getRandomValue()
     {
         $array = $this->getArrayCopy();
-        return Util::array_value_random($array);
+        return Util::array_random_value($array);
     }
 
     public function isSequential(): bool
